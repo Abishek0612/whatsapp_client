@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 function App() {
   const { user } = useSelector((state) => state.user);
-  const token = user?.access_token; // Directly access the token property
+  const token = user?.token; // Directly access the token property
 
   return (
     <div className="dark" >
