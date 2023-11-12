@@ -10,13 +10,13 @@ export default function Home() {
 
   //! get conversations
   useEffect(() => {
-    if (user) {
+    if (user?.token) {
       dispatch(getConversations(user?.token));
     }
   }, [dispatch,user]);
 
   return (
-    <div className="min-h-screen dark:bg-dark_bg_1 flex items-center justify-center py-[19px]  overflow-hidden">
+    <div className="h-screen dark:bg-dark_bg_1 flex items-center justify-center py-[19px]  overflow-hidden">
       {/* container */}
       <div className="container min-h-screen flex">
         {/* Sidebar */}
